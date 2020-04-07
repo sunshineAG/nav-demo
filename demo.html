@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+        }
+        li{
+            flex: 0 1 auto;
+            flex-basis: 100px;
+            list-style: none;
+            display:inline-block;
+            height:30px;
+            line-height:30px;
+            text-align:center;
+        }
+        .box{
+            width:100%;
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+        .nav{
+            max-width: 800px;
+            margin:0 auto;
+            background:#ccc;
+        }
+        ul>li:nth-child(1){
+            background:pink;
+            cursor: pointer;
+        }
+
+p{margin:0;}
+a{text-decoration: none;}
+.bz-header-subnav{position: relative;}
+.bz-header-subnav:hover .bz-header-subnav-list p{z-index: 999;height: 36px;}
+.bz-header-subnav-list{position: absolute;left: -26px;width: 164px;}
+.bz-header-subnav-list p{ background: #ccc;line-height: 40px;overflow: hidden;height: 0;-webkit-transition: height 200ms ease-in;-moz-transition: height 200ms ease-in;-o-transition: height 200ms ease-in;transition: height 200ms ease-in;}
+.bz-header-subnav-list a{display: inline-block;width:100%;padding-left:10px;}
+.bz-header-subnav-list a:hover{color: #ffb300;background-color: #f8f6f1;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="nav">
+            <ul>
+                <li class="bz-header-subnav"  title="123">产品中心 <span style="vertical-align: middle;">﹀</span></a>
+                    <div class="bz-header-subnav-list">
+                        <p><span><a href="#"  class="sub-link"> 55</a></span></p>
+                        <p><span><a href="#" class="sub-link">66</a></span></p>
+                        <p><span><a href="#" class="sub-link">44</a></span></p>
+                        <p><span><a href="#" class="sub-link">33</a></span></p>
+                        <p><span><a href="#" class="sub-link"> 22</a></span></p>
+                    </div>
+                </li>
+                <li>Demo2</li>
+                <li style=" white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" title="123">爆汁公众号任务宝</li>
+                <li>Demo4</li>
+                <li>Demo5</li>
+                <li>Demo6</li>
+                <li>Demo7</li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+
+    </div>
+</body>
+</html>
